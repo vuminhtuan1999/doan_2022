@@ -13,7 +13,7 @@
       <div class="main-content">
         <h3 style="margin: 20px 0px 10px 0px">
           <i class="material-icons"> arrow_circle_right </i>
-          Quản Lý Hóa Đơn Dịch Vụ Giặt Là
+          Hóa Đơn Tiền Phòng và Điện Nước
         </h3>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Thêm phòng</button>
         

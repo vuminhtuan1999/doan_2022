@@ -121,7 +121,7 @@
     </div>
 
     <!-- Modal Thêm Phòng -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -152,10 +152,10 @@
             </div>
           </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal Sửa Phòng -->
-    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -182,10 +182,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal Xóa Phòng -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" ref="deleteModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal2" tabindex="-1" ref="deleteModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -203,7 +203,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </template>
