@@ -15,7 +15,7 @@
           <i class="material-icons"> arrow_circle_right </i>
           Quản lý phòng
         </h3>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Thêm phòng</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Thêm phòng</button>
         
         <div id="user-list-room_wrapperroom">
           <div
@@ -82,11 +82,11 @@
                       <td>{{ room.note }}</td>
                       <td>{{ room.month_cost }}</td>
                       <td>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#pamentModal" @click="getIdForPayment(room.id, room.month_cost)">Đóng tiền hàng tháng</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pamentModal" @click="getIdForPayment(room.id, room.month_cost)">Đóng tiền hàng tháng</button>
                         &nbsp;&nbsp; 
-                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal1" @click="updateRoom(room.id)">Sửa phòng</button>   
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1" @click="updateRoom(room.id)">Sửa phòng</button>   
                         &nbsp;&nbsp; 
-                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2" @click="deleteRoom(room.id)">Xóa phòng</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal2" @click="deleteRoom(room.id)">Xóa phòng</button>
                         
                       </td>
                     </tr>
@@ -144,7 +144,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Thêm phòng</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -169,7 +169,7 @@
               </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
                 <button type="submit" form="form-add-room" class="btn btn-primary">Thêm</button>
             </div>
           </div>
@@ -182,7 +182,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Sửa phòng</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -199,7 +199,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
             <button type="button" class="btn btn-primary">Sửa</button>
           </div>
         </div>
@@ -212,7 +212,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Xóa phòng</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -220,7 +220,7 @@
               Bạn có chắc chắn muốn xóa không?
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Không</button>
             <button type="button" class="btn btn-danger" @click="confirmDelete">Có</button>
           </div>
         </div>
@@ -233,7 +233,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Hóa Đơn tiền phòng</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -250,7 +250,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
             <button type="submit" form="paymentForm" class="btn btn-primary">Tạo Hóa Đơn</button>
           </div>
         </div>

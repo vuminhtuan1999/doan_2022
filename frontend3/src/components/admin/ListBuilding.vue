@@ -15,7 +15,7 @@
           <i class="material-icons"> arrow_circle_right </i>
           Quản lý tòa nhà
         </h3>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addBuildingModal">Thêm tòa</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addBuildingModal">Thêm tòa</button>
         
 
         <div class="container" id="user-list-building_wrapperroom">
@@ -44,6 +44,7 @@
                 </div>
               </div>
             </div>
+            <!-- Sau khi thêm tòa nhà sẽ hiện đoạn này -->
                 <div class="card mx-auto" style="width: 18rem;" v-for="bl in this.buildings" :key="bl.id">
                     <img class="card-img-top" :src="bl.image" style="width: 100%; height: 200px;">
                     <div class="card-body">
@@ -53,7 +54,7 @@
 
                             <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1" @click="updateBuilding(bl.id)">Sửa</button>
                             
-                            <!-- Modal -->
+                            <!-- Modal sửa tòa nhà-->
                             <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -133,7 +134,7 @@
           <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Thêm tòa nhà</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -158,7 +159,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
               <button type="submit" form="form-add-building" class="btn btn-primary">Thêm</button>
             </div>
           </div>

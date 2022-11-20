@@ -191,6 +191,7 @@ export default {
             }).then(resp => console.log("Success"))
             .catch(err => console.log(err))
         }).catch(err => console.log(err))
+        location.reload(false)
     },
     getRoomName(roomid) {
         let room = new Object(this.rooms.find(el => el.id === roomid))
@@ -199,6 +200,7 @@ export default {
 
     getUser(userid) {
         let user = new Object(this.users.find(el => el.id === userid))
+        console.log('Lấy thông tin user',user)
         return user
     },
     async getListBooking() {

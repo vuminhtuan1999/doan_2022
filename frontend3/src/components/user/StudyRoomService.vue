@@ -399,6 +399,7 @@ export default {
             },
         }).then(resp => {
           console.log("Đặt chỗ thành công")
+          window.alert('đặt oke')
           window.$('#exampleModal').modal('hide')
           this.seat_choose = 0
 
@@ -406,7 +407,10 @@ export default {
     },
     checkExistStudentCode() {
       let temp = this.bookeds.find(el => el.student_code === this.$store.state.student_code)
-      if (temp) return true
+      console.log('check student code', this.bookeds)
+      if (temp) {
+        
+        return true}
       return false
     },
     deleteSeat() {
@@ -420,6 +424,8 @@ export default {
           }
         }).then(resp => {
           console.log("Hủy đặt chỗ thành công");
+          window.alert(' huyr đặt oke')
+
           window.$('#exampleModal').modal('hide')
           this.seat_choose = 0
         }).catch(err => console.log(err))
